@@ -37,6 +37,7 @@ py stock_checker.py
 The script handles non-numeric input with a helpful message.
 It does not yet reject negative numbers or automatically ask again.
 
+
 ## Dictionary practice
 
 File: dictionary_practice.py
@@ -54,3 +55,19 @@ I learned:
 - An assignment can update a dictionary value.
 
 This exercise stores settings locally. It does not call an AI service.
+
+
+
+## Request checker
+
+File: request_checker.py
+
+Checks whether a sample request has a description.
+Uses .strip() to treat whitespace-only descriptions as missing.
+
+Tests completed:
+- Empty description: Missing description.
+- Three spaces: Missing description.
+- Actual text: Description supplied.
+
+This is fixed-rule automation, not an AI model.
