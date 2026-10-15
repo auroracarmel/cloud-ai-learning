@@ -71,3 +71,17 @@ Tests completed:
 - Actual text: Description supplied.
 
 This is fixed-rule automation, not an AI model.
+
+### Priority flag
+
+The checker searches for "urgent" using .lower(), so capitalization
+does not affect the match.
+
+Tests:
+- "Urgent Printer offline": flagged for priority review.
+- "Printer offline": not flagged.
+- "This is not urgent": flagged — a false positive.
+
+Known limitation:
+The rule matches text rather than meaning. Priority flags require
+human review.
