@@ -34,4 +34,23 @@ py stock_checker.py
 
 ## Current limitations
 
-The script does not yet handle non-numeric input or reject negative numbers.
+The script handles non-numeric input with a helpful message.
+It does not yet reject negative numbers or automatically ask again.
+
+## Dictionary practice
+
+File: dictionary_practice.py
+
+I created a dictionary containing an assistant name and a max_words setting.
+I changed max_words from 50 to 100, then retrieved and printed its value.
+
+Expected output: 100
+Actual output: 100
+
+I learned:
+- A dictionary stores values under keys.
+- Square brackets retrieve a value using its key.
+- Text keys need quotation marks.
+- An assignment can update a dictionary value.
+
+This exercise stores settings locally. It does not call an AI service.

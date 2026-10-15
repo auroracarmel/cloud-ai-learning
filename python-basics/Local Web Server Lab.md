@@ -28,3 +28,15 @@ py -m http.server 8000 --bind 127.0.0.1
 - 127.0.0.1 points to the computer making the request.
 - This server serves files from its current folder.
 - Serving a Python file does not execute it.
+
+## TCP port checks
+
+I tested connectivity using PowerShell:
+
+- Server running, port 8000: TcpTestSucceeded was True.
+- Server stopped, port 8000: connection failed.
+- Server running on 8000, testing port 9000: connection failed.
+
+A successful TCP test confirms a connection to the port.
+It does not prove the application works correctly.
+A failed test alone does not identify the cause.
